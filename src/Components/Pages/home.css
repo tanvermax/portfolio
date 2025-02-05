@@ -1,0 +1,18 @@
+.banner{
+    background-image: url('./../../assets/banner2.png');
+    
+    background-position: center;
+    background-size: 80% 85%;
+    background-repeat: no-repeat;
+    
+   
+}
+.banner2{
+    background-image: url('./../../assets/banner2.png');
+    
+    background-position: center;
+    background-size: 70% 55%;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+}
