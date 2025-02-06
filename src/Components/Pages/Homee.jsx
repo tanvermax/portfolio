@@ -22,7 +22,7 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className="banner min-h-screen w-screen bg-black p-40 text-white">
+    <div className="banner h-[100vh] w-screen bg-black p-40 text-white">
       <div className="pt-20">
         <h1 className="text-5xl w-[550px] leading-[60px] font-bold">
           HI, I'M TANVER! CREATIVE{" "}

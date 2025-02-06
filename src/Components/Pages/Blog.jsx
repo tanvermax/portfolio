@@ -35,7 +35,7 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="min-h-screen w-screen pl-28 bg-black text-white ">
+    <div className="h-[100vh] w-[85vw] pl-28 bg-black text-white ">
       <h3 className="text-green-400 text-center font-semibold">ALL BLOG</h3>
       <h2 className="text-3xl md:text-4xl font-bold text-center mt-2">
         Rafting Unique Experiences <br /> Inspiring Connections
