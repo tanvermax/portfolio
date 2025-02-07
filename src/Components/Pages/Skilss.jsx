@@ -22,18 +22,18 @@ const Skills = () => {
       <h2 className="text-xl md:text-3xl font-bold text-center text-green-400 mb-10">MY Skills</h2>
 
       <div className="md:max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:ml-0 ml-12">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-gray-900 p-6 rounded-lg text-center shadow-md flex flex-col items-center justify-center"
+              className="bg-gray-900 p-4 rounded-lg text-center shadow-md flex flex-col items-center justify-center"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="text-5xl md:text-6xl mb-2">{skill.icon}</div>
-              <p className="text-lg md:text-xl font-semibold">{skill.name}</p>
+              <div className="text-3xl md:text-6xl mb-2">{skill.icon}</div>
+              <p className="text-[8px] md:text-xl font-semibold">{skill.name}</p>
             </motion.div>
           ))}
         </div>
