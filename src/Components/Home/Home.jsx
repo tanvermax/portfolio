@@ -1,6 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Home as HomeIcon, User, Briefcase, Layers, Image, Book, Mail } from "lucide-react";
+import logo from "./../../assets/logo2.png"
+import {
+  Home as HomeIcon,
+  User,
+  Briefcase,
+  Layers,
+  Image,
+  Book,
+  Mail,
+} from "lucide-react";
 import Aboutme from "../Pages/Aboutme";
 import Blog from "../Pages/Blog";
 import Service from "../Pages/Service";
@@ -60,44 +69,109 @@ const Home = () => {
   return (
     <div className="flex bg-black">
       {/* Sidebar Navigation */}
-      <nav className=" fixed left-0 top-0 h-full w-72 bg-gray-900 p-4 flex flex-col gap-6 items-center justify-center text-white shadow-lg">
-        <div className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-black p-5 relative -top-20 flex items-center">
-          <img src="/src/assets/logo2.png" alt="Logo" />
-          <p className="font-bold text-2xl">TANVER MAHIDI</p>
+      <nav className=" fixed left-0 top-0 h-full md:w-72 w-16 bg-black md:p-4 flex flex-col gap-6 md:items-center md:justify-center text-white shadow-lg">
+        <div className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-black p-1 md:p-5 relative md:-top-20 flex items-center">
+          <img className="w-5" src={logo} alt="Logo" />
+          <p className="font-bold md:text-2xl text-[8px]">TANVER MAHIDI</p>
         </div>
         {[
-          { id: "home", label: "Home", icon: <HomeIcon size={35} /> },
-          { id: "aboutme", label: "About", icon: <User size={24} /> },
-          { id: "service", label: "Service", icon: <Briefcase size={24} /> },
-          { id: "skills", label: "Skills", icon: <Layers size={24} /> },
-          { id: "portfolio", label: "Portfolio", icon: <Image size={24} /> },
-          { id: "blog", label: "Blog", icon: <Book size={24} /> },
-          { id: "contact", label: "Contact", icon: <Mail size={24} /> },
+          {
+            id: "home",
+            label: "Home",
+            icon: (
+              <>
+                <HomeIcon className="hidden md:block" size={35} />
+                <HomeIcon className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "aboutme",
+            label: "About",
+            icon: (
+              <>
+                <User size={24} className="hidden md:block" />
+                <User className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "service",
+            label: "Service",
+            icon: (
+              <>
+                <Briefcase size={24} className="hidden md:block" />
+                <Briefcase className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "skills",
+            label: "Skills",
+            icon: (
+              <>
+                <Layers size={24} className="hidden md:block" />
+                <Layers className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "portfolio",
+            label: "Portfolio",
+            icon: (
+              <>
+                <Image size={24} className="hidden md:block" />
+                <Image className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "blog",
+            label: "Blog",
+            icon: (
+              <>
+                <Book size={24} className="hidden md:block" />
+                <Book className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
+          {
+            id: "contact",
+            label: "Contact",
+            icon: (
+              <>
+                <Mail size={24} className="hidden md:block" />
+                <Mail className="md:hidden p-1" size={15} />
+              </>
+            ),
+          },
         ].map((item) => (
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className={`flex items-center p-3 w-full transition-all duration-300 rounded-md ${
+            className={`flex items-center md:p-3 w-full transition-all duration-300 rounded-md ${
               visibleSection === item.id
                 ? "bg-emerald-500 text-black font-bold"
                 : "text-white hover:bg-gray-700"
             }`}
           >
             {item.icon}
-            <span className="text-xl mt-1 ml-3 ">{item.label}</span>
+            <span className="md:text-xl text-[8px] md:mt-1 md:ml-3 ">
+              {item.label}
+            </span>
           </button>
         ))}
       </nav>
 
       {/* Main Content Area */}
-      <div className="relative h-[100vh] left-72 w-[85vw] overflow-y-auto">
+      <div className="relative h-[100vh] left-20 md:left-72 w-[85vw] overflow-y-auto">
         <motion.section
           ref={homeRef}
           id="home"
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "home" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center bg-black mt-15 text-white"
+          className="md:min-h-screen flex items-center justify-center bg-black  text-white"
         >
           <Homee />
         </motion.section>
@@ -119,7 +193,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "service" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center ml-20  text-white"
+          className="min-h-screen flex items-center justify-center ml-20 text-white"
         >
           <Service />
         </motion.section>

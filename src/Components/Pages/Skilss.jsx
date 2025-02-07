@@ -5,11 +5,10 @@ const Skilss = () => {
     <div className="min-h-screen w-screen bg-black py-20">
       <div className="min-h-screen  bg-black text-white py-12 px-6">
         <h2 className="text-xs md:text-xl font-bold text-center text-green-400">
-        MY Skills
+          MY Skills
         </h2>
         <p className="text-4xl font-bold text-center py-10 w-[700px] mx-auto">
-        Crafting Stories through Develope and
-        Imagination
+          Crafting Stories through Develope and Imagination
         </p>
 
         {/* Skills Section */}
@@ -46,7 +45,7 @@ const Skilss = () => {
               href="/your-cv.pdf"
               download
               className="bg-green-500 text-black font-bold px-6 py-3 rounded-md inline-block hover:bg-green-400 transition"
-            >
+            >      
               Download CV
             </a>
           </div>

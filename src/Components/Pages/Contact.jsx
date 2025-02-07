@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,26 +8,24 @@ const Contact = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl">
       {/* Phone */}
       <div className="bg-gray-900 p-6 rounded-md text-center">
-        <div className="text-green-400 text-4xl">📞</div>
+        <div className="text-green-400 text-4xl flex justify-center gap-5">📞 <FaWhatsapp />
+        </div>
         <h2 className="text-xl font-bold mt-2">Phone</h2>
-        <p className="text-gray-400 mt-1">Lorem ipsum eros justo, posuer.</p>
-        <p className="text-gray-300 font-semibold mt-1">123-45664-746846</p>
+        <p className="text-gray-300 font-semibold mt-1">+8801701866120</p>
       </div>
 
       {/* Location */}
       <div className="bg-gray-900 p-6 rounded-md text-center">
-        <div className="text-green-400 text-4xl">📍</div>
-        <h2 className="text-xl font-bold mt-2">Location</h2>
-        <p className="text-gray-400 mt-1">Dhaka 102, m eros justo.</p>
+        <div className="text-green-400 text-4xl">Location</div>
+        <h2 className="text-xl font-bold mt-2"></h2>
+        <p className="text-gray-400 mt-1">Dhaka 1256, Bangladesh</p>
         <a href="#" className="text-green-400 font-semibold mt-1">View on map</a>
       </div>
 
       {/* Email */}
       <div className="bg-gray-900 p-6 rounded-md text-center">
-        <div className="text-green-400 text-4xl">📧</div>
-        <h2 className="text-xl font-bold mt-2">Monday - Sunday</h2>
-        <p className="text-gray-400 mt-1">Dhaka 102, m eros justo.</p>
-        <p className="text-gray-300 font-semibold mt-1">hfavouriteemail@gmail.com</p>
+        <div className="text-green-400 text-4xl">Email</div>
+        <p className="text-gray-300 font-semibold mt-1">tanveermahidi@gmail.com</p>
       </div>
     </div>
 
