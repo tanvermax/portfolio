@@ -35,32 +35,32 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="h-[100vh] w-[85vw] pl-28 bg-black text-white ">
+    <div className="h-[100vh] md:w-[85vw] pl-28 bg-black text-white py-10 ">
       <h3 className="text-green-400 text-center font-semibold">ALL BLOG</h3>
-      <h2 className="text-3xl md:text-4xl font-bold text-center mt-2">
+      <h2 className="text-[10px] md:text-4xl font-bold text-center mt-2">
         Rafting Unique Experiences <br /> Inspiring Connections
       </h2>
 
       {/* Blog Cards */}
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 md:mt-12 mt-5 md:max-w-6xl md:w-full w-[200px] pr-10 md:pr-0 mx-auto">
         {blogData.map((blog) => (
           <div key={blog.id} className="bg-gray-900 p-4 rounded-lg shadow-lg">
             <div className="relative">
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-64 object-cover rounded-md"
+                className="w-full md:h-64 h-28   object-cover rounded-md"
               />
-              <span className="absolute top-3 right-3 bg-green-500 text-black px-3 py-1 text-sm font-bold rounded-md">
+              <span className="absolute top-3 right-3 bg-green-500 text-black px-3 py-1 md:text-sm text-[8px]  font-bold rounded-md">
                 {blog.date}
               </span>
             </div>
             <div className="mt-4">
-              <p className="text-gray-400 flex items-center gap-2 text-sm">
+              <p className="text-gray-400 flex items-center gap-2  md:text-sm text-[8px] ">
                 <span>🟢 By {blog.author}</span> | <span>💬 Comments ({blog.comments})</span>
               </p>
-              <h3 className="text-xl font-bold mt-2">{blog.title}</h3>
-              <p className="text-gray-400 mt-2 text-sm">{blog.description}</p>
+              <h3 className="md:text-xl text-[8px]  font-bold mt-2">{blog.title}</h3>
+              <p className="text-gray-400 mt-2 md:text-sm text-[8px] ">{blog.description}</p>
             </div>
           </div>
         ))}

@@ -40,7 +40,7 @@ const Homee = () => {
               {words[index]}
             </motion.span>
           </h1>
-          <p className="lg:pr-[550px] pr-[50px] text-[8px] pt-10 md:leading-[30px] text-gray-400">
+          <p className="md:w-[550px] w-[200px]pr-[50px] md:text-xl text-[8px] pt-10 md:pr-0 pr-5 md:leading-[30px] text-gray-400">
             I'm a passionate Full-Stack Web Developer with over 3 years of
             experience specializing in React.js, JavaScript, and UI/UX design. I
             have completed 250+ projects worldwide, crafting dynamic and
