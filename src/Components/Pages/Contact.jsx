@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="pr-32 pl-20 md:pl-0  min-h-screen w-screen bg-black text-white  mx-auto p-10 md:p-36">
+    <div className="pr-32 pl-20  min-h-screen w-screen bg-black text-white  mx-auto p-10 md:p-36">
     {/* Contact Info Section */}
     <div className="grid  md:grid-cols-3 gap-6 mb-12 max-w-4xl">
       {/* Phone */}

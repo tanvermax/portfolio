@@ -69,7 +69,7 @@ const Home = () => {
   return (
     <div className="flex bg-black">
       {/* Sidebar Navigation */}
-      <nav className="fixed z-20 left-0 top-0 h-full md:w-72 w-16 bg-black md:p-4 flex flex-col gap-6 md:items-center md:justify-center text-white shadow-lg">
+      <nav className="fixed z-20 left-2 top-8 h-full md:w-72 w-16 bg-black md:p-4 flex flex-col gap-6 md:items-center md:justify-center text-white shadow-lg">
         <div className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-black p-1 md:p-5 relative md:-top-20 flex items-center">
           <img className="w-5" src={logo} alt="Logo" />
           <p className="font-bold md:text-2xl text-[8px]">TANVER MAHIDI</p>
@@ -164,14 +164,14 @@ const Home = () => {
       </nav>
 
       {/* Main Content Area */}
-      <div className="relative h-[100vh] pl-16 md:pl-72 md:w-[100vw] md:overflow-y-auto md:overflow-x-hidden">
+      <div className="relative h-[100vh]  md:pl-72 md:w-[100vw] md:overflow-y-auto md:overflow-x-hidden">
         <motion.section
           ref={homeRef}
           id="home"
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "home" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className=" md:min-h-screen flex items-center justify-center bg-black relative left-20  text-white"
+          className=" md:min-h-screen flex items-center justify-center bg-black relative   text-white"
         >
           <Homee />
         </motion.section>
@@ -182,7 +182,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "aboutme" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-20 flex items-center justify-center  text-white"
+          className="min-h-screen relative left-0 flex items-center justify-center  text-white"
         >
           <Aboutme />
         </motion.section>
@@ -193,7 +193,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "service" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-20 flex items-center justify-center md:ml-20 text-white"
+          className="min-h-screen relative left-0 flex items-center justify-center md:ml-20 text-white"
         >
           <Service />
         </motion.section>
@@ -204,7 +204,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "skills" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center  text-white"
+          className="min-h-screen relative left-0  flex items-center justify-center  text-white"
         >
           <Skilss />
         </motion.section>

@@ -38,7 +38,7 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 pl-32 bg-black">
       <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
@@ -53,7 +53,7 @@ const Portfolio = () => {
               <h3 className="text-xl font-semibold">{project.name}</h3>
               <button 
                 onClick={() => setSelectedProject(project)} 
-                className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                className="mt-4 px-4 py-2 bg-emerald-500 text-white rounded-md hover:bg-blue-700 transition"
               >
                 View More
               </button>
@@ -63,13 +63,13 @@ const Portfolio = () => {
       </div>
 
       {selectedProject && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-6">
+        <div className="fixed left-10 inset-0 flex items-center justify-center bg-black bg-opacity-50 md:p-6">
           <div className="bg-black p-6 rounded-2xl shadow-lg w-full max-w-lg">
-            <h3 className="text-2xl font-bold">{selectedProject.name}</h3>
-            <p className="mt-2"><strong>Tech Stack:</strong> {selectedProject.techStack}</p>
-            <p className="mt-2">{selectedProject.description}</p>
-            <p className="mt-2"><strong>Challenges:</strong> {selectedProject.challenges}</p>
-            <p className="mt-2"><strong>Future Improvements:</strong> {selectedProject.improvements}</p>
+            <h3 className="md:text-2xl text-xs font-bold">{selectedProject.name}</h3>
+            <p className="mt-2 md:text-xl text-[8px]"><strong>Tech Stack:</strong> {selectedProject.techStack}</p>
+            <p className="mt-2 md:text-xl text-[8px]">{selectedProject.description}</p>
+            <p className="mt-2 md:text-xl text-[8px]"><strong>Challenges:</strong> {selectedProject.challenges}</p>
+            <p className="mt-2 md:text-xl text-[8px]"><strong>Future Improvements:</strong> {selectedProject.improvements}</p>
             <div className="flex gap-4 mt-4">
               <a href={selectedProject.liveLink} target="_blank" rel="noopener noreferrer" className="text-blue-500">Live Project</a>
               <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="text-blue-500">GitHub Repo</a>

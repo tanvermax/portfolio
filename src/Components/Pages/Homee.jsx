@@ -9,6 +9,7 @@ import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
 import phot from "./../../assets/banner.png";
+import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Homee = () => {
   const words = ["WEB DEVELOPER", "ENGINEER", "FREELANCER"];
@@ -23,9 +24,9 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className=" flex pl-20 md:pl-0  flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
+    <div className=" flex ml-28 md:pl-0 pb-40 md:pb-0 flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
       <div>
-        <div className="md:pt-20 ml-10">
+        <div className="md:pt-20 md:ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">
             HI, I'M TANVER! CREATIVE{" "}
             <motion.span
@@ -39,14 +40,14 @@ const Homee = () => {
               {words[index]}
             </motion.span>
           </h1>
-          {/* <p className="lg:pr-[550px] pt-10 leading-[30px] text-gray-400">
-  I'm a passionate Full-Stack Web Developer with over 6 years of
-  experience specializing in React.js, JavaScript, and UI/UX design. I
-  have completed 550+ projects worldwide, crafting dynamic and engaging
-  digital experiences. My expertise lies in building high-performance
-  applications with a focus on user experience and seamless
-  functionality.
-</p> */}
+          <p className="lg:pr-[550px] pr-[50px] text-[8px] pt-10 md:leading-[30px] text-gray-400">
+            I'm a passionate Full-Stack Web Developer with over 3 years of
+            experience specializing in React.js, JavaScript, and UI/UX design. I
+            have completed 250+ projects worldwide, crafting dynamic and
+            engaging digital experiences. My expertise lies in building
+            high-performance applications with a focus on user experience and
+            seamless functionality.
+          </p>
         </div>
         <div className="md:mt-28 mt-5">
           <button className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-64 w-24 p-5 md:p-10 flex items-center justify-center border border-gray-700 bg-emerald-500 rounded-md relative left-12 overflow-hidden group">
@@ -60,21 +61,42 @@ const Homee = () => {
               <GoDownload /> Download CV
             </span>
           </button>
-          <div className=" flex  md:pt-14 md:gap-5 gap-2 pt-5">
-            <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-              <RiFacebookCircleLine className="md:text-5xl text-[8px] " />
+          <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0  md:pt-14 md:gap-5 gap-2 pt-5">
+            <Link
+              to={"https://www.facebook.com/tanvermahidi999/"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <RiFacebookCircleLine className="md:text-5xl text-[16px] " />
             </Link>
-            <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-              <CiInstagram className="md:text-5xl text-[8px]" />
+            <Link
+              to={"https://www.instagram.com/tanverstagram/?hl=en"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <CiInstagram className="md:text-5xl text-[16px]" />
             </Link>
-            <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-              <CiLinkedin className="md:text-5xl text-[8px]" />
+            <Link
+              to={"https://www.linkedin.com/in/tanver-mahidi-2725292ab/"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <CiLinkedin className="md:text-5xl text-[16px]" />
             </Link>
-            <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-              <FaXTwitter className="md:text-5xl text-[8px]" />
+            <Link
+              to={"https://x.com/MahidiTanv41555"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <FaXTwitter className="md:text-5xl text-[16px]" />
             </Link>
-            <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-              <VscGithub className="md:text-5xl text-[8px]" />
+            <Link
+              to={"https://github.com/tanvermax"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <VscGithub className="md:text-5xl text-[16px]" />
+            </Link>
+            <Link
+              to={"https://www.youtube.com/@TanveerMahidi"}
+              className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            >
+              <PiYoutubeLogoThin className="md:text-5xl text-[16px]" />
             </Link>
           </div>
           {/* button */}

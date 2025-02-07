@@ -2,7 +2,7 @@ import React from "react";
 
 const Skilss = () => {
   return (
-    <div className="min-h-screen w-screen bg-black py-20">
+    <div className="min-h-screen w-screen bg-black p-5 pl-32">
       <div className="min-h-screen  bg-black text-white py-12 px-6">
         <h2 className="text-xs md:text-xl font-bold text-center text-green-400">
           MY Skills
@@ -12,7 +12,7 @@ const Skilss = () => {
         {/* Skills Section */}
         <div className="md:max-w-6xl mx-auto mt-10  ">
           <h3 className="md:text-2xl text-[6px] font-semibold text-green-400">Skills</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 mt-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 lg:grid-cols-4 md:gap-4 mt-4">
             {[
               "HTML",
               "CSS",
@@ -42,7 +42,7 @@ const Skilss = () => {
             <a
               href="/your-cv.pdf"
               download
-              className="bg-green-500 text-black font-bold md:px-6 md:py-3 rounded-md inline-block hover:bg-green-400 transition"
+              className="bg-green-500 text-black font-bold md:px-6 md:py-3 p-1 rounded-md inline-block hover:bg-green-400 transition"
             >      
               Download CV
             </a>
