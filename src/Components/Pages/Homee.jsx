@@ -23,9 +23,9 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className="banner flex  flex-col-reverse md:flex-row md:justify-between md:h-[100vh]  bg-black md:p-28 text-white">
+    <div className=" flex  flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
       <div>
-        <div className="pt-20 ml-10">
+        <div className="md:pt-20 ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">
             HI, I'M TANVER! CREATIVE{" "}
             <motion.span
@@ -48,7 +48,7 @@ const Homee = () => {
   functionality.
 </p> */}
         </div>
-        <div className="mt-28">
+        <div className="md:mt-28 mt-5">
           <button className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-64 w-24 p-5 md:p-10 flex items-center justify-center border border-gray-700 bg-emerald-500 rounded-md relative left-12 overflow-hidden group">
             {/* Default Text */}
             <span className="absolute  flex items-center gap-2 md:text-2xl text-[8px] text-black transition-all duration-500 group-hover:-translate-y-5 group-hover:opacity-0">
@@ -60,7 +60,7 @@ const Homee = () => {
               <GoDownload /> Download CV
             </span>
           </button>
-          <div className=" flex pt-14 md:gap-5 gap-2 ">
+          <div className=" flex  md:pt-14 md:gap-5 gap-2 pt-5">
             <Link className="border-2 p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
               <RiFacebookCircleLine className="md:text-5xl text-[8px] " />
             </Link>
@@ -80,8 +80,8 @@ const Homee = () => {
           {/* button */}
         </div>
       </div>
-      <div className="w-full">
-        <img className="md:h-[600px] md:w-[1000px]" src={phot} alt="" />
+      <div className="">
+        <img className="md:h-[600px] md:w-[1000px] -ml-10" src={phot} alt="" />
       </div>
     </div>
   );

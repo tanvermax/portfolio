@@ -164,7 +164,7 @@ const Home = () => {
       </nav>
 
       {/* Main Content Area */}
-      <div className="relative h-[100vh] left-20 md:left-72 w-[85vw] overflow-y-auto">
+      <div className=" relative h-[100vh] left-16 md:left-72 md:w-[85vw]  md:overflow-y-auto overflow-x-hidden">
         <motion.section
           ref={homeRef}
           id="home"
@@ -182,7 +182,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "aboutme" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center  text-white"
+          className="min-h-screen flex items-center ml-20 justify-center  text-white"
         >
           <Aboutme />
         </motion.section>
@@ -193,7 +193,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "service" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center ml-20 text-white"
+          className="min-h-screen flex items-center justify-center md:ml-20 text-white"
         >
           <Service />
         </motion.section>

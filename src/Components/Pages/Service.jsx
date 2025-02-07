@@ -1,90 +1,73 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-
 const Service = () => {
   return (
     <div className="bg-black p-6 md:p-12 text-black">
       {/* Header */}
       <motion.h1 
-        className="text-4xl font-bold text-white text-center mb-8"
+        className="md:text-4xl text-[10px] font-bold text-white text-center mb-8"
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.6 }}
       >
-        Resume
+        My Biodata
       </motion.h1>
 
       {/* Summary Section */}
       <motion.div 
-        className=" p-6 shadow-lg rounded-lg"
+        className="bg-gray-800 p-6 shadow-lg rounded-lg border-l-4 border-emerald-500"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-2xl font-semibold text-emerald-500 mb-2">Summary</h2>
-        <p className="text-white italic">
-          <span className="font-bold">BRANDON JOHNSON</span> - Innovative and
-          deadline-driven Graphic Designer with 3+ years of experience designing
-          and developing user-centered digital/print marketing materials.
+        <h2 className="md:text-2xl text-[6px] font-semibold text-emerald-500 mb-2">Summary</h2>
+        <p className="text-white italic md:text-2xl text-[6px]">
+          <span className="font-bold ">Tanver Mahidi</span> - Passionate Full Stack Web Developer with **6+ years** of experience. Specialized in **React.js, Tailwind CSS, Node.js, and MongoDB**. Completed **550+ international projects** on Fiverr with excellence.
         </p>
-        <ul className="mt-4 text-white">
-          <li>📍 Portland par 127, Orlando, FL</li>
-          <li>📞 (123) 456-7891</li>
-          <li>✉️ alice.barkley@example.com</li>
-        </ul>
+       
       </motion.div>
 
       {/* Education Section */}
       <motion.div 
-        className="mt-6  p-6 shadow-lg rounded-lg"
+        className="mt-6 bg-gray-800 p-6 shadow-lg rounded-lg border-l-4 border-blue-500"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7 }}
       >
-        <h2 className="text-2xl font-semibold text-emerald-500 mb-2">Education</h2>
-        <div className="border-l-4 border-blue-500 pl-4">
-          <h3 className="font-bold">MASTER OF FINE ARTS & GRAPHIC DESIGN</h3>
-          <p className="text-gray-500 italic">
-            Rochester Institute of Technology, 2015 - 2016
-          </p>
-        </div>
-        <div className="border-l-4 border-blue-500 pl-4 mt-4">
-          <h3 className="font-bold">BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h3>
-          <p className="text-gray-500 italic">
-            Rochester Institute of Technology, 2010 - 2014
-          </p>
-        </div>
+        <h2 className="md:text-2xl text-[6px] font-semibold text-blue-500 mb-2">Education</h2>
+        <p className="text-white md:text-2xl text-[6px]">
+          <span className="font-bold">B.Sc. in Computer Science & Engineering</span><br />
+          Ideal College, Dhanmondi | **Final Year**
+        </p>
       </motion.div>
 
       {/* Experience Section */}
       <motion.div 
-        className="mt-6  p-6 shadow-lg rounded-lg"
+        className="mt-6 bg-gray-800 p-6 shadow-lg rounded-lg border-l-4 border-green-500"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="text-2xl font-semibold text-emerald-500 mb-2">
-          Professional Experience
-        </h2>
-        <div className="border-l-4 border-green-500 pl-4">
-          <h3 className="font-bold">SENIOR GRAPHIC DESIGN SPECIALIST</h3>
-          <p className="text-gray-500 italic">Experion, New York, NY | 2019 - Present</p>
-          <ul className="mt-2 text-white list-disc pl-5">
-            <li>Lead the design, development, and implementation of graphics.</li>
-            <li>Delegate tasks to a 7-member design team.</li>
-            <li>Supervise quality assessment of graphic materials.</li>
+        <h2 className="md:text-2xl text-[6px] font-semibold text-green-500 mb-2">Work Experience</h2>
+        
+        <div className="pl-4">
+          <h3 className="font-bold text-white md:text-2xl text-[6px]">Full Stack Developer | Fiverr</h3>
+          <p className="text-gray-400 italic md:text-2xl text-[6px]">2018 - Present</p>
+          <ul className="mt-2 text-white list-disc pl-5 md:text-2xl text-[6px]">
+            <li>Developed and delivered **550+ websites** worldwide.</li>
+            <li>Specialized in **React.js, Node.js, MongoDB, and Tailwind CSS**.</li>
+            <li>Handled **front-end & back-end** for eCommerce, business, and service platforms.</li>
           </ul>
         </div>
-        <div className="border-l-4 border-green-500 pl-4 mt-4">
-          <h3 className="font-bold">GRAPHIC DESIGN SPECIALIST</h3>
-          <p className="text-gray-500 italic">
-            Stepping Stone Advertising, 2017 - 2018
-          </p>
-          <ul className="mt-2 text-white list-disc pl-5">
-            <li>Developed marketing materials (logos, brochures, etc.).</li>
-            <li>Managed up to 5 projects simultaneously.</li>
-            <li>Created 4+ design presentations per month.</li>
+
+        <div className="pl-4 mt-4">
+          <h3 className="font-bold text-white md:text-2xl text-[6px]">Machine Learning Researcher</h3>
+          <p className="text-gray-400 italic md:text-2xl text-[6px]">AI & ML Research Group</p>
+          <ul className="mt-2 text-white list-disc pl-5 md:text-2xl text-[6px]">
+            <li>Focusing on **Explainable AI (XAI) and AI for Social Good**.</li>
+            <li>Currently working on AI-powered **eCommerce solutions**.</li>
+            <li>Contributing to open-source AI projects and research papers.</li>
           </ul>
         </div>
       </motion.div>
