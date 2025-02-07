@@ -23,7 +23,7 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className=" flex  flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
+    <div className=" flex pl-20 md:pl-0  flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
       <div>
         <div className="md:pt-20 ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">

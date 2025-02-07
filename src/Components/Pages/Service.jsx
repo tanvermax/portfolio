@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <div className="bg-black p-6 md:p-12 text-black">
+    <div className="bg-black p-6 md:p-28 text-black pl-20 md:pl-0 ">
       {/* Header */}
       <motion.h1 
         className="md:text-4xl text-[10px] font-bold text-white text-center mb-8"
@@ -16,7 +16,7 @@ const Service = () => {
 
       {/* Summary Section */}
       <motion.div 
-        className="bg-gray-800 p-6 shadow-lg rounded-lg border-l-4 border-emerald-500"
+        className="bg-gray-800 p-6 shadow-lg rounded-lg border-l-4  border-emerald-500"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}

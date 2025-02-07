@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Aboutme = () => {
   return (
-    <div className="min-h-screen w-screen bg-black text-white mx-auto md:p-36">
+    <div className="min-h-screen w-screen pl-20 bg-black text-white mx-auto md:p-36">
       <h1 className="text-emerald-500 font-bold md:text-xl text-[10px]">ABOUT ME</h1>
       <p className="mt-10 md:leading-[30px] text-gray-400 border-l-2  pl-2 border-emerald-500 md:text-xl text-[6px]">
         I am a highly skilled Full-Stack Web Developer with over 6 years of experience, specializing in React.js, JavaScript, and UI/UX design. With a strong passion for creating dynamic and user-centric web applications, I have successfully completed 550+ projects worldwide, delivering high-performance solutions tailored to clients’ needs. My expertise extends to front-end and back-end development, ensuring seamless functionality and outstanding user experiences.
