@@ -31,7 +31,47 @@ const projects = [
     github: "https://github.com/tanvermax/eco-adventure",
     challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
     improvements: "Adding a pet adoption section and integrating user-generated reviews."
-  }
+  },
+  {
+    name: "FLOWER SHOP",
+    image: "https://i.ibb.co.com/23M5QR2X/Screenshot-2025-02-08-12-43-54.png",
+    techStack: "React, Tailwind, Express, MongoDB",
+    description: "An eCommerce platform focused on pet products and accessories.",
+    liveLink: "https://tanvermax.github.io/flower_shop/",
+    github: "https://github.com/tanvermax/flower_shop",
+    challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
+    improvements: "Adding a flower section and integrating user-generated reviews."
+  },
+  {
+    name: "Micro-Task and Earning Platform",
+    image: "https://i.ibb.co.com/tPC0gqLQ/Screenshot-2025-02-08-14-54-32.png",
+    techStack: "React, Tailwind, Express, MongoDB",
+    description: "An eCommerce platform focused on pet products and accessories.",
+    liveLink: "https://earnly-f35f1.web.app/",
+    github: "https://github.com/tanvermax/micro-task-earning",
+    challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
+    improvements: "Adding a coin section and integrating user-generated reviews."
+  },
+  {
+    name: "penguin-fashion",
+    image: "https://i.ibb.co.com/tpz3bTB6/Screenshot-2025-02-08-14-58-07.png",
+    techStack: "React, Tailwind, Express, MongoDB",
+    description: "An eCommerce platform focused on pet products and accessories.",
+    liveLink: "https://tanvermax.github.io/penguin-fashion-resources/",
+    github: "https://github.com/tanvermax/penguin-fashion-resources",
+    challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
+    improvements: "Adding a all item and integrating user-generated reviews."
+  },
+  {
+    name: "Rinterio house Rent",
+    image: "https://i.ibb.co.com/TBS7q3MX/Screenshot-2025-02-08-15-07-43.png",
+    techStack: "React, Tailwind, Express, MongoDB",
+    description: "An eCommerce platform focused on pet products and accessories.",
+    liveLink: "https://tanvermax.github.io/assingnment-three/",
+    github: "https://github.com/tanvermax/assingnment-three",
+    challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
+    improvements: "Adding a houses and integrating user-generated reviews."
+  },
 ];
 
 const Portfolio = () => {
