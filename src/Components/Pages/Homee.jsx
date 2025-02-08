@@ -12,7 +12,7 @@ import phot from "./../../assets/banner.png";
 import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Homee = () => {
-  const words = ["WEB DEVELOPER", "ENGINEER", "FREELANCER"];
+  const words = ["WEB DEVELOPER", "ENGINEER"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -103,7 +103,7 @@ const Homee = () => {
         </div>
       </div>
       <div className="">
-        <img className="md:h-[600px] md:w-[1000px] -ml-10" src={phot} alt="" />
+        <img className="md:h-[500px]  -ml-10" src={phot} alt="" />
       </div>
     </div>
   );
