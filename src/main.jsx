@@ -7,6 +7,8 @@ import { routs } from "./Routs/routs.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={routs}></RouterProvider>
+    <RouterProvider router={routs}>
+      
+    </RouterProvider>
   </StrictMode>
 );
