@@ -8,7 +8,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
-import phot from "./../../assets/banner.png";
+import phot from "./../../assets/banner3.png";
 import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Homee = () => {
