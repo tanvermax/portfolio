@@ -40,6 +40,7 @@ const Home = () => {
   const [visibleSection, setVisibleSection] = useState("home");
 
   const scrollToSection = (section) => {
+    
     sections[section]?.current?.scrollIntoView({ behavior: "smooth" });
 
     // Ensure state updates after scrolling
@@ -182,7 +183,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "aboutme" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-0 flex items-center justify-center  text-white"
+          className="min-h-screen relative left-0 flex items-center justify-center bg-black  text-white"
         >
           <Aboutme />
         </motion.section>
@@ -193,7 +194,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "service" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-0 flex items-center justify-center md:ml-20 text-white"
+          className="md:min-h-screen flex items-center justify-center bg-black relative   text-white"
         >
           <Service />
         </motion.section>
@@ -204,7 +205,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "skills" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-0  flex items-center justify-center  text-white"
+          className="md:min-h-screen flex items-center justify-center bg-black relative   text-white"
         >
           <Skilss />
         </motion.section>
@@ -215,7 +216,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "portfolio" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center  text-white"
+          className="min-h-screen bg-black flex items-center justify-center  text-white"
         >
           <Portfolio />
         </motion.section>
@@ -226,7 +227,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "blog" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center bg-gray-800 text-white"
+          className="min-h-screen bg-black flex items-center justify-center  text-white"
         >
           <Blog />
         </motion.section>
@@ -237,7 +238,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={visibleSection === "contact" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center bg-gray-800 text-white"
+          className="min-h-screen flex items-center justify-center bg-black text-white"
         >
           <Contact />
         </motion.section>

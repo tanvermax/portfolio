@@ -18,19 +18,19 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="min-h-screen w-screen bg-black text-white p-10">
+    <div className="relative top-20 left-0 pb-5 px-16 bg-black">
       <h2 className="text-xl md:text-3xl font-bold text-center text-green-400 mb-10">MY Skills</h2>
 
-      <div className="md:max-w-6xl mx-auto">
+      <div className="md:max-w-6xl mx-auto bg-black">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:ml-0 ml-12">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
               className="bg-gray-900 p-4 rounded-lg text-center shadow-md flex flex-col items-center justify-center"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.4 }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.0 }}
             >
               <div className="text-3xl md:text-6xl mb-2">{skill.icon}</div>
               <p className="text-[8px] md:text-xl font-semibold">{skill.name}</p>
@@ -40,7 +40,7 @@ const Skills = () => {
       </div>
 
       {/* Download CV Section */}
-      <div className="max-w-6xl mx-auto mt-10 text-center">
+      <div className="max-w-6xl mx-auto mt-10 text-center ">
         <h3 className="md:text-2xl text-lg font-semibold text-green-400">Download CV</h3>
         <motion.a
           href="/your-cv.pdf"
@@ -53,7 +53,7 @@ const Skills = () => {
       </div>
 
       {/* Education Section */}
-      <div className="max-w-6xl mx-auto mt-10">
+      <div className="max-w-6xl mx-auto mt-10 bg-black ml-5">
         <h3 className="md:text-2xl text-lg font-semibold text-green-400 text-center">Education</h3>
         <div className="mt-4 space-y-4">
           {[ 
@@ -69,8 +69,8 @@ const Skills = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h4 className="md:text-xl text-lg font-bold">{edu.title}</h4>
-              <p className="text-gray-400 md:text-lg text-base">{edu.school}</p>
+              <h4 className="md:text-xl text-xs font-bold">{edu.title}</h4>
+              <p className="text-gray-400 md:text-lg text-xs">{edu.school}</p>
             </motion.div>
           ))}
         </div>

@@ -24,18 +24,18 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className=" flex ml-28 md:pl-0 pb-40 md:pb-0 flex-col-reverse md:flex-row md:justify-between md:h-[100vh]   bg-black md:p-28 text-white">
+    <div className=" md:grid md:grid-cols-2 relative top-20  left-10 px-16 flex flex-col-reverse ">
       <div>
         <div className="md:pt-20 md:ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">
-            HI, I'M TANVER! CREATIVE{" "}
+            HI, I'M TANVER! CREATIVE{" "} <br />
             <motion.span
               key={words[index]} // Key changes to trigger animation
               initial={{ opacity: 0, scale: 0.8, y: -10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 10 }}
               transition={{ duration: 1, ease: "easeInOut" }}
-              className="text-emerald-500 inline-block"
+              className="text-emerald-500 inline-block  "
             >
               {words[index]}
             </motion.span>
@@ -61,7 +61,7 @@ const Homee = () => {
               <GoDownload /> Download CV
             </span>
           </button>
-          <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0  md:pt-14 md:gap-5 gap-2 pt-5">
+          <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
             <Link
               to={"https://www.facebook.com/tanvermahidi999/"}
               className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <div className="bg-black pl-24 md:p-28 text-black p-5 pr-7 h-screen md:pr-7 py-20 md:pl-0 pb-20">
+    <div className="relative top-20 left-10 h-[110vh] px-16 pr-32">
       {/* Header */}
       <motion.h1 
         className="md:text-4xl text-[10px] font-bold text-white text-center mb-8"

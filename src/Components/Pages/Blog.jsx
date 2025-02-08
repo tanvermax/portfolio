@@ -35,14 +35,16 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="h-[100vh] md:w-[85vw] pl-28 bg-black text-white py-10 ">
+    <div className="relative top-20 left-10  px-16 pr-20">
+
+    
       <h3 className="text-green-400 text-center font-semibold">ALL BLOG</h3>
       <h2 className="text-[10px] md:text-4xl font-bold text-center mt-2">
         Rafting Unique Experiences <br /> Inspiring Connections
       </h2>
 
       {/* Blog Cards */}
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 md:mt-12 mt-5 md:max-w-6xl md:w-full w-[200px] pr-10 md:pr-0 mx-auto">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 md:mt-12 mt-5 md:max-w-6xl md:w-full w-[230px] pr-10 md:pr-0 mx-auto">
         {blogData.map((blog) => (
           <div key={blog.id} className="bg-gray-900 p-4 rounded-lg shadow-lg">
             <div className="relative">
