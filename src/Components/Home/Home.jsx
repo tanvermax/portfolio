@@ -72,7 +72,7 @@ const Home = () => {
       {/* Sidebar Navigation */}
       <nav className="fixed z-20 left-2 top-8 h-full md:w-72 w-16 bg-black md:p-4 flex flex-col gap-6 md:items-center md:justify-center text-white shadow-lg">
         <div className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-black p-1 md:p-5 relative md:-top-20 flex items-center">
-          <img className="w-5" src={logo} alt="Logo" />
+          <img className="h-10" src={logo} alt="Logo" />
           <p className="font-bold md:text-2xl text-[8px]">TANVER MAHIDI</p>
         </div>
         {[

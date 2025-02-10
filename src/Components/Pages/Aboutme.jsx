@@ -34,7 +34,7 @@ const Aboutme = () => {
             transition={{ duration: 1 }}
           >
             <h2 className="md:text-2xl text-[10px] font-bold">UI/UX Designer & Web Developer</h2>
-            <div className="grid md:grid-cols-2 gap-4 mt-4 text-gray-300 mb-20">
+            <div className="lg:grid md:grid-cols-2 gap-4 mt-4 text-gray-300 mb-20">
               <p className="flex items-center gap-3 text-[6px] md:text-xl">
                 <IoIosArrowForward className="text-emerald-500" />
                 <span className="font-semibold"> Birthday:</span> 29 March 2000

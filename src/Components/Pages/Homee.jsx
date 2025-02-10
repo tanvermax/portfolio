@@ -24,7 +24,7 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className=" md:grid md:grid-cols-2 relative top-20  left-10 px-16 flex flex-col-reverse ">
+    <div className=" lg:grid md:grid-cols-2 relative top-20  left-10 px-16 flex flex-col-reverse ">
       <div>
         <div className="md:pt-20 md:ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">
@@ -32,7 +32,7 @@ const Homee = () => {
             <motion.span
               key={words[index]} // Key changes to trigger animation
               initial={{ opacity: 0, scale: 0.8, y: -10 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
+              animate={{ opacity: 2, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 10 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="text-emerald-500 inline-block  "
@@ -53,12 +53,12 @@ const Homee = () => {
           <button className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-64 w-24 p-5 md:p-10 flex items-center justify-center border border-gray-700 bg-emerald-500 rounded-md relative left-12 overflow-hidden group">
             {/* Default Text */}
             <span className="absolute  flex items-center gap-2 md:text-2xl text-[8px] text-black transition-all duration-500 group-hover:-translate-y-5 group-hover:opacity-0">
-              <GoDownload /> Download CV
+              <a href="/cv.pdf"><GoDownload /> Download CV</a>
             </span>
             {/* clolour=  7c6447 */}
             {/* Hover Text (Slides Up) */}
             <span className="absolute flex items-center gap-2 md:text-2xl text-[8px] text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              <GoDownload /> Download CV
+            <a href="/cv.pdf"><GoDownload /> Download CV</a>
             </span>
           </button>
           <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
