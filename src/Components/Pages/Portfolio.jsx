@@ -26,11 +26,21 @@ const projects = [
     name: "ECO ADVENTURE",
     image: "https://i.ibb.co.com/Z1pQzCbh/Screenshot-2025-02-07-21-30-52.png",
     techStack: "React, Tailwind, Express, MongoDB",
+    description: "Managing tasks efficiently is key to productivity, and I’ve built a dynamic, intuitive, and user-friendly task management web app to make it easier than ever!",
+    liveLink: "https://task-management-b4adc.web.app/",
+    github: "https://github.com/tanvermax/task-management",
+    challenges: "adding npm package for task categories and optimizing API performance.",
+    improvements: "Adding a task  section and integrating user-generated reviews."
+  },
+  {
+    name: "Task- Management ",
+    image: "https://i.ibb.co.com/VcV0mK1k/Screenshot-2025-03-04-02-23-34.png",
+    techStack: "React,NPM, Tailwind, Express, MongoDB",
     description: "An eCommerce platform focused on pet products and accessories.",
-    liveLink: "https://assignment-9-bb0d9.web.app/",
-    github: "https://github.com/tanvermax/eco-adventure",
+    liveLink: "https://tanvermax.github.io/assingnment-three/",
+    github: "https://github.com/tanvermax/assingnment-three",
     challenges: "Creating an intuitive UI for pet categories and optimizing API performance.",
-    improvements: "Adding a pet adoption section and integrating user-generated reviews."
+    improvements: "Adding a houses and integrating user-generated reviews."
   },
   {
     name: "FLOWER SHOP",
