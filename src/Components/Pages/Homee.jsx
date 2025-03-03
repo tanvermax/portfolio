@@ -53,12 +53,12 @@ const Homee = () => {
           <button className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-64 w-24 p-5 md:p-10 flex items-center justify-center border border-gray-700 bg-emerald-500 rounded-md relative left-12 overflow-hidden group">
             {/* Default Text */}
             <span className="absolute  flex items-center gap-2 md:text-2xl text-[8px] text-black transition-all duration-500 group-hover:-translate-y-5 group-hover:opacity-0">
-              <a href="/cv.pdf"><GoDownload /> Download CV</a>
+              <a href=""><GoDownload /> Download CV</a>
             </span>
             {/* clolour=  7c6447 */}
             {/* Hover Text (Slides Up) */}
             <span className="absolute flex items-center gap-2 md:text-2xl text-[8px] text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-            <a href="/cv.pdf"><GoDownload /> Download CV</a>
+            <a href="https://drive.google.com/file/d/1woWlc4etXQVjg8mtWOT9Ojuo6WGp94c3/view?usp=sharing"><GoDownload /> Download CV</a>
             </span>
           </button>
           <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
