@@ -88,11 +88,11 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="= ">
+    <div className=" pt-5">
       <h2 className="md:text-3xl text-xl font-bold text-center mb-8">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-2xl p-4 hover:shadow-xl transition duration-300">
+          <div key={index} className="border-[1px] shadow-lg rounded-[4px] md:p-4 p-1 hover:shadow-xl transition duration-300">
             <motion.img
               src={project.image}
               alt={project.name}
