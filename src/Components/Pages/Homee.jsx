@@ -58,7 +58,7 @@ const Homee = () => {
             {/* clolour=  7c6447 */}
             {/* Hover Text (Slides Up) */}
             <span className="absolute flex items-center gap-2 md:text-2xl text-[8px] text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-            <a href="https://drive.google.com/file/d/1woWlc4etXQVjg8mtWOT9Ojuo6WGp94c3/view?usp=sharing"><GoDownload /> Download CV</a>
+            <a href="https://drive.google.com/file/d/1gOOoFKcR3ZCWkRtBMwL_HQqHlbK4-BT3/view?usp=sharing"><GoDownload /> Download CV</a>
             </span>
           </button>
           <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
