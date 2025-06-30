@@ -49,18 +49,25 @@ const Homee = () => {
             seamless functionality.
           </p>
         </div>
-        <div className="md:mt-28 mt-5">
-          <button className="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-64 w-24 p-5 md:p-10 flex items-center justify-center border border-gray-700 bg-emerald-500 rounded-md relative left-12 overflow-hidden group">
-            {/* Default Text */}
-            <span className="absolute  flex items-center gap-2 md:text-2xl text-[8px] text-black transition-all duration-500 group-hover:-translate-y-5 group-hover:opacity-0">
-              <a href=""><GoDownload /> Download CV</a>
-            </span>
-            {/* clolour=  7c6447 */}
-            {/* Hover Text (Slides Up) */}
-            <span className="absolute flex items-center gap-2 md:text-2xl text-[8px] text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-            <a href="https://drive.google.com/file/d/1gOOoFKcR3ZCWkRtBMwL_HQqHlbK4-BT3/view?usp=sharing"><GoDownload /> Download CV</a>
-            </span>
-          </button>
+        <div className="md:mt-28 mt-5 ml-10">
+          <a
+            href="https://drive.google.com/file/d/1gOOoFKcR3ZCWkRtBMwL_HQqHlbK4-BT3/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <button className="shadow-[0_10px_30px_rgba(8,112,184,0.4)] hover:shadow-[0_15px_40px_rgba(8,112,184,0.6)] md:w-64 w-40 py-4 md:py-8 px-6 flex items-center justify-center border border-gray-300 bg-emerald-600 hover:bg-emerald-700 rounded-lg relative transition-all duration-300 ease-in-out  overflow-hidden group">
+              {/* Default Text */}
+              <span className="absolute flex items-center gap-2 md:text-lg text-sm font-medium text-white transition-all duration-300 group-hover:-translate-y-5 group-hover:opacity-0">
+                <GoDownload className="md:w-5 md:h-5 w-4 h-4" /> Download CV
+              </span>
+
+              {/* Hover Text (Slides Up) */}
+              <span className="absolute flex items-center gap-2 md:text-lg text-sm font-medium text-white opacity-0 transition-all duration-300 transform translate-y-5 group-hover:translate-y-0 group-hover:opacity-100">
+                <GoDownload className="md:w-5 md:h-5 w-4 h-4" /> Get My Resume
+              </span>
+            </button>
+          </a>
           <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
             <Link
               to={"https://www.facebook.com/tanvermahidi999/"}
