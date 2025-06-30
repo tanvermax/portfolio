@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <div className="relative top-20 left-10 h-[110vh] px-16 pr-32">
+    <div className=" h-[110vh] ">
       {/* Header */}
       <motion.h1 
         className="md:text-4xl text-[10px] font-bold text-white text-center mb-8"

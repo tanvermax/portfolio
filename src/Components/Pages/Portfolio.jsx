@@ -88,7 +88,7 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="relative top-20 left-10 pb-26 px-16 pr-28 ">
+    <div className="= ">
       <h2 className="md:text-3xl text-xl font-bold text-center mb-8">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
@@ -100,10 +100,10 @@ const Portfolio = () => {
               whileHover={{ scale: 1.05 }}
             />
             <div className="text-center mt-4">
-              <h3 className="text-xl font-semibold">{project.name}</h3>
+              <h3 className="md:text-xl text-[10px] font-semibold">{project.name}</h3>
               <button 
                 onClick={() => setSelectedProject(project)} 
-                className="mt-4 px-4 py-2 bg-emerald-500 text-white rounded-md hover:bg-blue-700 transition"
+                className="md:text-base text-[8px] mt-4 px-4 py-2 bg-emerald-500 text-white rounded-md hover:bg-blue-700 transition"
               >
                 View More
               </button>

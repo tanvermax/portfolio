@@ -6,7 +6,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 const Mainlayout = () => {
   return (
-    <div className="flex bg-black min-h-[110vh]">
+    <div className="flex  ">
       
       <AnimatedCursor></AnimatedCursor>
       <Home></Home>

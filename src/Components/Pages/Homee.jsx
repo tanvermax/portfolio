@@ -24,7 +24,7 @@ const Homee = () => {
   }, []);
 
   return (
-    <div className=" lg:grid md:grid-cols-2 relative top-20  left-10 px-16 flex flex-col-reverse ">
+    <div className=" lg:grid md:grid-cols-2  flex flex-col-reverse ">
       <div>
         <div className="md:pt-20 md:ml-10">
           <h1 className="md:text-5xl md:w-[550px] w-[200px] md:leading-[60px] font-bold">
@@ -68,7 +68,7 @@ const Homee = () => {
               </span>
             </button>
           </a>
-          <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0 bg-black  md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
+          <div className=" md:flex grid grid-cols-2 pr-10 md:pr-0   md:pt-14 md:gap-5 gap-2 pt-5 pb-20">
             <Link
               to={"https://www.facebook.com/tanvermahidi999/"}
               className="border-2 mx-auto p-3 rounded-3xl border-emerald-500 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"

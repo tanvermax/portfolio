@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative top-20 left-10 pb-26 px-16 pr-28">
+    <div className="">
       {/* Contact Info Section */}
       <motion.div
         className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl"
@@ -47,7 +47,7 @@ const Contact = () => {
       >
         {/* Phone */}
         <motion.div
-          className="bg-gray-900 p-6 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
+          className="border-[1px] md:p-6 p-2 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
           variants={itemVariants}
           whileHover={{ y: -5 }}
         >
@@ -70,7 +70,7 @@ const Contact = () => {
 
         {/* Location */}
         <motion.div
-          className="bg-gray-900 p-6 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
+          className="border-[1px] md:p-6 p-2 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
           variants={itemVariants}
           whileHover={{ y: -5 }}
         >
@@ -94,7 +94,7 @@ const Contact = () => {
 
         {/* Email */}
         <motion.div
-          className="bg-gray-900 p-6 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
+          className="border-[1px] md:p-6 p-2 rounded-lg text-center w-full min-w-[190px] md:w-[200px] hover:shadow-lg transition-shadow duration-300"
           variants={itemVariants}
           whileHover={{ y: -5 }}
         >
@@ -119,17 +119,17 @@ const Contact = () => {
 
       {/* Contact Form */}
       <motion.div
-        className="md:max-w-4xl w-full"
+        className=""
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         <motion.form
-          className="p-6 rounded-lg bg-gray-900"
+          className="md:p-6 rounded-lg bg-gray-900"
           variants={formItemVariants}
         >
           <motion.h2
-            className="text-xl md:text-2xl font-bold text-white mb-6 text-center"
+            className="text-[10px] md:text-2xl font-bold text-white mb-6 text-center"
             variants={formItemVariants}
           >
             Send Me a Message

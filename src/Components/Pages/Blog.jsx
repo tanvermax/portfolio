@@ -56,13 +56,13 @@ const Blog = () => {
   };
 
   return (
-    <div className="relative top-20 left-10 md:px-16 pr-20">
+    <div className="">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-12"
+        className="text-center md:mb-12 "
       >
         <span className="text-emerald-400 text-sm font-semibold tracking-wider">
           TECH BLOG
@@ -89,7 +89,7 @@ const Blog = () => {
         {blogData.map((blog) => (
           <motion.div
             key={blog.id}
-            className="bg-gray-800 w-54 md:w-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-800 w-49 md:w-full border-[1px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             variants={item}
             whileHover={{ y: -5 }}
           >

@@ -68,12 +68,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex ">
+    <div className="grid grid-cols-10  ">
       {/* Sidebar Navigation */}
-      <nav className="fixed z-20 left-2 top-8 h-full md:w-72 w-16 bg-black md:p-4 flex flex-col gap-6 md:items-center md:justify-center text-white shadow-lg">
-        <div className=" bg-black p-1 md:p-5 relative md:-top-20 flex items-center">
+      <nav className="fixed col-span-5 m-5 h-full justify-center  bg-black md:p-4 flex flex-col md:gap-6 gap-3 md:items-center md:justify-center text-white shadow-lg">
+        <div className="border-2  p-1 md:p-5 relative md:-top-20 flex items-center">
           <img className="lg:h-10 h-5" src={logo} alt="Logo" />
-          <p className="font-bold md:text-xl text-[4px]">TANVER MAHIDI</p>
+          <p className="font-bold md:text-xl text-[5px]">TANVER MAHIDI</p>
         </div>
         {[
           {
@@ -150,9 +150,9 @@ const Home = () => {
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className={`flex items-center md:p-3 w-full transition-all duration-300 rounded-md ${
+            className={`flex items-center md:p-3 p-2 w-full transition-all duration-300 rounded-[4px] ${
               visibleSection === item.id
-                ? "bg-emerald-500 text-black font-bold"
+                ? "s text-[#00BC80] font-bold"
                 : "text-white hover:bg-gray-700"
             }`}
           >
@@ -165,14 +165,15 @@ const Home = () => {
       </nav>
 
       {/* Main Content Area */}
-      <div className="relative h-[100vh]  md:pl-72 md:w-[100vw] md:overflow-y-auto md:overflow-x-hidden">
+
+      <div className=" col-span-10  m-5 ">
         <motion.section
           ref={homeRef}
           id="home"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 3, y: 0 }}
           animate={visibleSection === "home" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className=" md:min-h-screen flex items-center justify-center bg-black relative   text-white"
+          className="    md:ml-70 ml-20  px-2   "
         >
           <Homee />
         </motion.section>
@@ -180,10 +181,10 @@ const Home = () => {
         <motion.section
           ref={aboutmeRef}
           id="aboutme"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "aboutme" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative left-0 flex items-center justify-center bg-black  text-white"
+          className=" md:ml-70 ml-20  px-2 "
         >
           <Aboutme />
         </motion.section>
@@ -191,10 +192,10 @@ const Home = () => {
         <motion.section
           ref={serviceRef}
           id="service"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "service" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="md:min-h-screen flex items-center justify-center bg-black relative   text-white"
+          className="md:ml-70 ml-20  px-2 "
         >
           <Service />
         </motion.section>
@@ -202,10 +203,10 @@ const Home = () => {
         <motion.section
           ref={skillsRef}
           id="skills"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "skills" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="md:min-h-screen flex items-center justify-center bg-black relative   text-white"
+          className="md:ml-70 ml-20  px-2 "
         >
           <Skilss />
         </motion.section>
@@ -213,10 +214,10 @@ const Home = () => {
         <motion.section
           ref={portfolioRef}
           id="portfolio"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "portfolio" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen bg-black flex items-center justify-center  text-white"
+          className="md:ml-70 ml-20  px-2 "
         >
           <Portfolio />
         </motion.section>
@@ -224,10 +225,10 @@ const Home = () => {
         <motion.section
           ref={blogRef}
           id="blog"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "blog" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen bg-black flex items-center justify-center  text-white"
+          className="md:ml-70 ml-20  px-2 "
         >
           <Blog />
         </motion.section>
@@ -235,10 +236,10 @@ const Home = () => {
         <motion.section
           ref={contactRef}
           id="contact"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={visibleSection === "contact" ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="min-h-screen flex items-center justify-center bg-black text-white"
+          className="md:ml-70 ml-20  px-2 "
         >
           <Contact />
         </motion.section>
