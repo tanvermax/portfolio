@@ -70,7 +70,7 @@ const Home = () => {
   return (
     <div className="grid grid-cols-10  ">
       {/* Sidebar Navigation */}
-      <nav className="fixed col-span-5 m-5 h-full justify-center  bg-black md:p-4 flex flex-col md:gap-6 gap-3 md:items-center md:justify-center text-white shadow-lg">
+      <nav className="fixed col-span-5 m-5 h-full gap-2 bg-black md:p-4 flex flex-col justify-evenly md:items-center md:justify-center text-white shadow-lg">
         <div className="border-2  p-1 md:p-5 relative md:-top-20 flex items-center">
           <img className="lg:h-10 h-5" src={logo} alt="Logo" />
           <p className="font-bold md:text-xl text-[5px]">TANVER MAHIDI</p>
@@ -150,7 +150,7 @@ const Home = () => {
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className={`flex items-center md:p-3 p-2 w-full transition-all duration-300 rounded-[4px] ${
+            className={`flex  border-b items-center md:p-3 p-2 w-full transition-all duration-300 rounded-[4px] ${
               visibleSection === item.id
                 ? "s text-[#00BC80] font-bold"
                 : "text-white hover:bg-gray-700"
@@ -166,7 +166,7 @@ const Home = () => {
 
       {/* Main Content Area */}
 
-      <div className=" col-span-10  m-5 ">
+      <div className=" col-span-10  m-5  ">
         <motion.section
           ref={homeRef}
           id="home"

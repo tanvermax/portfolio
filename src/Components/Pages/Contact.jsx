@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import DynamicPortfolio from "../Admin/Dynamicporfolio";
 
 const Contact = () => {
   // Animation variants
@@ -34,6 +35,13 @@ const Contact = () => {
         duration: 0.5,
       },
     },
+  };
+
+  // State to toggle DynamicPortfolio visibility
+  const [isPortfolioVisible, setIsPortfolioVisible] = useState(false);
+
+  const togglePortfolio = () => {
+    setIsPortfolioVisible(!isPortfolioVisible);
   };
 
   return (
@@ -177,6 +185,30 @@ const Contact = () => {
           </motion.button>
         </motion.form>
       </motion.div>
+
+      {/* Toggle Button for DynamicPortfolio */}
+      <motion.button
+        className="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 text-sm"
+        onClick={togglePortfolio}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        {isPortfolioVisible ? "Hide Portfolio" : "Thanks you"}
+      </motion.button>
+
+      {/* DynamicPortfolio Section */}
+      {isPortfolioVisible && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div>
+            <DynamicPortfolio />
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };

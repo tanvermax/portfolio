@@ -12,35 +12,6 @@ export const routs = createBrowserRouter([
   {
     path: "/",
     element: <Mainlayout></Mainlayout>,
-    children: [
-      {
-        path: "/",
-        element: <Homee></Homee>,
-      },
-      {
-        path: "aboutme",
-        element: <Aboutme></Aboutme>,
-      },
-      {
-        path: "service",
-        element: <Service></Service>,
-      },
-      {
-        path: "skill",
-        element: <Skilss></Skilss>,
-      },
-      {
-        path: "portfolio",
-        element: <Portfolio></Portfolio>,
-      },
-      {
-        path: "blog",
-        element: <Blog></Blog>,
-      },
-      {
-        path:"contact",
-        element:<Contact></Contact>
-      }
-    ],
+
   },
 ]);
